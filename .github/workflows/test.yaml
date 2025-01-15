@@ -1,6 +1,13 @@
 name: My First GitHub Actions
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -25,5 +32,6 @@ jobs:
     - name: Run tests
       run: |
         cd ..
+        cd Users/himareddy/Documents/Python/pydemp/PyDemo/playwrightPy
         cd tests
         pytest -v
