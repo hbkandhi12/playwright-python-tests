@@ -4,7 +4,7 @@ from requests import Response
 
 class BasePage:
     def __init__(self, page: Page) -> None:
-        self.page = page;
+        self.page = page
 
 
     def navigate(self, url: str) -> Response:
