@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, Locator
+from playwright.sync_api import Page,sync_playwright
 
 from pages.base_page import BasePage
 
@@ -14,7 +14,6 @@ class LoginPage(BasePage):
         self.username_input.fill(username)
         self.password_input.fill(password)
         self.login_btn.click()
-        print('logining now..')
 
 
 
