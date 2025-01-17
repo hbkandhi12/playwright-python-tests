@@ -1,13 +1,14 @@
 [tool.poetry]
 name = "playwrightpy"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Playwright with Pytest Project"
+authors = ["Hima Reddy <himabindureddy@outlook.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
 requests = "^2.32.3"
+playwright = "^1.49.1"
 
 
 [tool.poetry.group.dev.dependencies]
