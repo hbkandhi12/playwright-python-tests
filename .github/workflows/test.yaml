@@ -34,5 +34,4 @@ jobs:
         pip install requests
 
     - name: Run tests
-      run: |
-        pytest -v
+      run: pytest -v
