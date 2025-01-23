@@ -44,3 +44,16 @@ jobs:
 
     - name: Run tests and generate allure reports
       run: poetry run pytest --alluredir=allure-results
+
+    - name: Generate Allure Report
+      run: |
+          mkdir -p allure-report
+          allure generate allure-results -o allure-report --clean
+
+    - name: Deploy Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./allure-report
+          keep_files: true  # Keeps old files instead of deleting them
