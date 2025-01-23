@@ -18,7 +18,7 @@ async def base_url():
 @pytest.fixture(scope='function')
 async def chromium_page():
         playwright = await async_playwright().start()
-        browser = await playwright.chromium.launch(headless=False)
+        browser = await playwright.chromium.launch(headless=BROWSER_HEADLESS)
         context = await browser.new_context()
         page = await context.new_page()
         yield page
