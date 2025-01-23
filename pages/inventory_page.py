@@ -1,5 +1,5 @@
 from pages.base_page import BasePage
-from playwright.sync_api import Page,sync_playwright
+from playwright.async_api import Page,async_playwright
 
 
 class InventoryPage(BasePage):
@@ -12,15 +12,15 @@ class InventoryPage(BasePage):
         self.remove_items_cart = self.page.locator("[id*='remove']")
 
 
-    def page_url(self,):
+    async def page_url(self,):
         return self.page.url
 
-    def click_item(self, item_name : str):
-        items_count = self.items_name_list.count()
+    async def click_item(self, item_name : str):
+        items_count = await self.items_name_list.count()
         for i in range(items_count):
-            item = self.items_name_list.nth(i)
-            text = item.inner_text()
+            item =  self.items_name_list.nth(i)
+            text = await item.inner_text()
             if item_name in text:
-                self.add_items_cart_list.nth(i).click()
+                await self.add_items_cart_list.nth(i).click()
                 break
-        assert self.shopping_cart_badge.text_content() == '1'
+        assert await self.shopping_cart_badge.text_content() == '1'

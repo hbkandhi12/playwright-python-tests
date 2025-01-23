@@ -1,4 +1,4 @@
-# playwrightPy
-Pytest - Playwright Sync
+
+Pytest Playwright Project
 
 //TODO

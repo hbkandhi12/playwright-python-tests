@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "playwrightpy"
+name = "playwrightPy"
 version = "0.1.0"
 description = "Playwright with Pytest Project"
 authors = ["Hima Reddy <himabindureddy@outlook.com>"]
@@ -9,6 +9,10 @@ readme = "README.md"
 python = "^3.11"
 requests = "^2.32.3"
 playwright = "^1.49.1"
+allure-pytest = "^2.13.5"
+pytest = "^8.3.4"
+pytest-playwright = "^0.6.2"
+pytest-asyncio = "^0.25.2"
 
 
 [tool.poetry.group.dev.dependencies]
