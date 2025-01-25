@@ -1,0 +1,1 @@
+DEBUG: chromium_page type: <class 'playwright.async_api._generated.Page'>
