@@ -1,4 +1,4 @@
-# playwright-python-tests - Automated Testing with Playwright & Python
+# Playwright-Python-tests - Automated Testing with Playwright & Python
 
 ![GitHub stars](https://img.shields.io/github/stars/hbkandhi12/playwright-python-tests?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/hbkandhi12/playwright-python-tests?style=social)
