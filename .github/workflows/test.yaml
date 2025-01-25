@@ -42,13 +42,32 @@ jobs:
     - name: Install Playwright Browsers
       run: poetry run playwright install --with-deps
 
-    - name: Run tests and generate allure reports
-      run: poetry run pytest --alluredir=allure-results
-
-    - name: Generate Allure Report
+    - name: Install Java (JDK 11)
       run: |
+        sudo apt update
+        sudo apt install -y openjdk-11-jdk
+        JAVA_HOME=$(readlink -f $(which java) | sed "s:bin/java::")
+        echo "JAVA_HOME=${JAVA_HOME}" >> $GITHUB_ENV
+        echo "${JAVA_HOME}/bin" >> $GITHUB_PATH
+
+    - name: Verify JAVA_HOME and Java Installation
+      run: |
+        echo "JAVA_HOME is set to: $JAVA_HOME"
+        java -version
+
+    - name: Install Allure CLI
+      run: |
+          version=$(curl -s https://api.github.com/repos/allure-framework/allure2/releases/latest | jq -r '.tag_name')
+          wget https://github.com/allure-framework/allure2/releases/download/${version}/allure-${version}.tgz
+          tar -xvzf allure-${version}.tgz
+          sudo mv allure-${version} /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/local/bin/allure
+
+    - name: Run Tests and Generate Allure Report
+      run: |
+          poetry run pytest --alluredir=allure-results
           mkdir -p allure-report
-          allure generate allure-results -o allure-report --clean
+          poetry run allure generate allure-results -o allure-report --clean
 
     - name: Deploy Allure Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
