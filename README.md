@@ -1,8 +1,8 @@
-# PlaywrightPy - Automated Testing with Playwright & Python
+# playwright-python-tests - Automated Testing with Playwright & Python
 
-![GitHub stars](https://img.shields.io/github/stars/hbkandhi12/playwrightPy?style=social)
-![GitHub forks](https://img.shields.io/github/forks/hbkandhi12/playwrightPy?style=social)
-![GitHub issues](https://img.shields.io/github/issues/hbkandhi12/playwrightPy)
+![GitHub stars](https://img.shields.io/github/stars/hbkandhi12/playwright-python-tests?style=social)
+![GitHub forks](https://img.shields.io/github/forks/hbkandhi12/playwright-python-tests?style=social)
+![GitHub issues](https://img.shields.io/github/issues/hbkandhi12/playwright-python-tests)
 
 Automate your web testing using **Playwright** and **Python**. This project provides end-to-end testing capabilities with **pytest** and **Playwright** for modern web applications.
 
@@ -30,8 +30,8 @@ Make sure you have the following installed:
 Clone the repository and install dependencies:
 ```bash
 # Clone the repository
-git clone https://github.com/hbkandhi12/playwrightPy.git
-cd playwrightPy
+git clone https://github.com/hbkandhi12/playwright-python-tests.git
+cd playwright-python-tests
 
 # Install dependencies using Poetry
 poetry install
@@ -64,7 +64,7 @@ poetry run allure generate allure-results -o allure-report --clean
 
 ## 📁 Project Structure
 ```
-playwrightPy/
+playwright-python-tests/
 │── tests/
 │   ├── test_login.py       # Login page test cases
 │   ├── test_checkout.py    # Checkout workflow tests
@@ -143,8 +143,8 @@ Want to improve this project? Contributions are welcome! 🚀
 ## 📢 Community & Support
 Have a question or feature request? **Create an issue** or start a **GitHub discussion**!
 
-- 📌 **Issues**: [Submit here](https://github.com/hbkandhi12/playwrightPy/issues)
-- 💬 **Discussions**: [Join here](https://github.com/hbkandhi12/playwrightPy/discussions)
+- 📌 **Issues**: [Submit here](https://github.com/hbkandhi12/playwright-python-tests/issues)
+- 💬 **Discussions**: [Join here](https://github.com/hbkandhi12/playwright-python-tests/discussions)
 
 ---
 
