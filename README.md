@@ -61,13 +61,14 @@ poetry run allure generate allure-results -o allure-report --clean
 ```
 You can view the latest test results in the [Allure Test Report]
 ```bash
+
 ## Build Status
 
 ![Build Status](https://img.shields.io/github/workflow/status/hbkandhi12/playwright-python-tests/Playwright%20-%20Pytest%20automation%20suite)
 
 ## Allure Test Report
 
-You can view the latest test results in the [Allure Test Report](https://hbkandhi12.github.io/playwright-python-tests/allure-report/).
+You can view the latest test results in the [Allure Test Report](https://hbkandhi12.github.io/playwright-python-tests).
 
 ```
 ---
