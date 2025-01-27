@@ -68,8 +68,8 @@ You can view the latest test results in the [Allure Test Report]
 ## Allure Test Report
 
 You can view the latest test results in the [Allure Test Report](https://hbkandhi12.github.io/playwright-python-tests/allure-report/).
-```
 
+```
 ---
 
 ## 📁 Project Structure
