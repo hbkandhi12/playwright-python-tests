@@ -31,7 +31,7 @@ class InventoryPage(BasePage):
                     return
         # Assert that the cart now has one item
         cart_badge_text = await self.shopping_cart_badge.text_content()
-        assert cart_badge_text == count, f"Expected cart to have {count} item/items, but found {cart_badge_text}."
+        assert cart_badge_text == str(count), f"Expected cart to have {count} item/items, but found {cart_badge_text}."
 
     async def click_shopping_cart(self):
         await self.shopping_cart_link.click()

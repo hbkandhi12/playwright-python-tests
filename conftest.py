@@ -5,7 +5,6 @@ from config import BASE_URL, BROWSER_HEADLESS
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
-from pages.checkout_page import CheckoutPage
 import pytest
 from playwright.async_api import async_playwright, Page
 from contextlib import asynccontextmanager

@@ -19,5 +19,5 @@ class TestLogin:
         assert await inventory_page.page_url() == INVENTORY_PAGE_URL , f"URL Mismatch: Expected url was {INVENTORY_PAGE_URL} but instaed found {inventory_page.page_url()}"
         await inventory_page.click_item('Sauce Labs Bike Light')
         # navigate to cart page
-        await click_shopping_cart()
+        await inventory_page.click_shopping_cart()
         assert await cart_page.page_url() == CART_PAGE_URL,f"URL Mismatch: Expected url was {CART_PAGE_URL} but instead found {cart_page.page_url()}"
