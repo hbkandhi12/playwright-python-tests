@@ -1,3 +1,0 @@
-DEBUG: chromium_page type: <class 'playwright.async_api._generated.Page'>
-DEBUG: Navigating to https://www.saucedemo.com/
-DEBUG: Page type: <class 'playwright.async_api._generated.Page'>

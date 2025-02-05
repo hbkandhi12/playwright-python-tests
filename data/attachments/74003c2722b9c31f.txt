@@ -1,1 +1,0 @@
-DEBUG: chromium_page type: <class 'async_generator'>

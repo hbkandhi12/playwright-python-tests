@@ -1,5 +1,0 @@
-DEBUG: chromium_page type: <class 'playwright.async_api._generated.Page'>
-DEBUG: Navigating to https://www.saucedemo.com/
-DEBUG: Page type: <class 'playwright.async_api._generated.Page'>
- inventory_page: <pages.inventory_page.InventoryPage object at 0x7fd6b63d3590>
- inventory_page URL: https://www.saucedemo.com/inventory.html
